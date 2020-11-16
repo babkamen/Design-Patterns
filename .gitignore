@@ -45,3 +45,6 @@ junit*.properties
 IgnoreLexer.java~
 .gradle
 .DS_Store
+# Ignore Gradle build output directory
+build
+.gradle
