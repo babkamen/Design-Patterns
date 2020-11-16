@@ -1,0 +1,1 @@
+[Documentation](https://refactoring.guru/design-patterns)
