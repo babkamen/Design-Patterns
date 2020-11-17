@@ -49,3 +49,4 @@ IgnoreLexer.java~
 build
 .gradle
 gradle
+*bat
