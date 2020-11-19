@@ -13,6 +13,8 @@ include('factory-method')
 project(':factory-method').projectDir = new File(rootDir, 'creational/factory-method')
 include('abstract-factory')
 project(':abstract-factory').projectDir = new File(rootDir, 'creational/abstract-factory')
+include('builder')
+project(':builder').projectDir = new File(rootDir, 'creational/builder')
 //Structural
 include('decorator')
 project(':decorator').projectDir = new File(rootDir, 'structural/decorator')

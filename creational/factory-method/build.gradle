@@ -36,11 +36,6 @@ dependencies {
     compile group: 'commons-codec', name: 'commons-codec', version: '1.15'
 }
 
-application {
-    // Define the main class for the application.
-    mainClass = 'decorator.App'
-}
-
 tasks.named('test') {
     // Use junit platform for unit tests.
     useJUnitPlatform()
