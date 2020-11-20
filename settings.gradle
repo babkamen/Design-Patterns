@@ -11,10 +11,19 @@ rootProject.name = 'Design.Patterns'
 //Creational
 include('factory-method')
 project(':factory-method').projectDir = new File(rootDir, 'creational/factory-method')
+
 include('abstract-factory')
 project(':abstract-factory').projectDir = new File(rootDir, 'creational/abstract-factory')
+
 include('builder')
 project(':builder').projectDir = new File(rootDir, 'creational/builder')
+
+include('prototype')
+project(':prototype').projectDir = new File(rootDir, 'creational/prototype')
+
+//include('singleton')
+//project(':singleton').projectDir = new File(rootDir, 'creational/singleton')
+
 //Structural
 include('decorator')
 project(':decorator').projectDir = new File(rootDir, 'structural/decorator')
