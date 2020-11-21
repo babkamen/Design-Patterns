@@ -25,6 +25,10 @@ project(':prototype').projectDir = new File(rootDir, 'creational/prototype')
 //project(':singleton').projectDir = new File(rootDir, 'creational/singleton')
 
 //Structural
+
+include('adapter')
+project(':adapter').projectDir = new File(rootDir, 'structural/adapter')
+
 include('decorator')
 project(':decorator').projectDir = new File(rootDir, 'structural/decorator')
 //Behavioral
