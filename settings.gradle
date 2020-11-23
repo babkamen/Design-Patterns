@@ -25,6 +25,8 @@ project(':prototype').projectDir = new File(rootDir, 'creational/prototype')
 //project(':singleton').projectDir = new File(rootDir, 'creational/singleton')
 
 //Structural
+include('bridge')
+project(':bridge').projectDir = new File(rootDir, 'structural/bridge')
 
 include('adapter')
 project(':adapter').projectDir = new File(rootDir, 'structural/adapter')
