@@ -33,4 +33,7 @@ project(':adapter').projectDir = new File(rootDir, 'structural/adapter')
 
 include('decorator')
 project(':decorator').projectDir = new File(rootDir, 'structural/decorator')
+
+include('facade')
+project(':facade').projectDir = new File(rootDir, 'structural/facade')
 //Behavioral
