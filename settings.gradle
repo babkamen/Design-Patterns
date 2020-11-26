@@ -8,35 +8,25 @@
  */
 
 rootProject.name = 'Design.Patterns'
-//Creational
-include('factory-method')
-project(':factory-method').projectDir = new File(rootDir, 'creational/factory-method')
-
-include('abstract-factory')
-project(':abstract-factory').projectDir = new File(rootDir, 'creational/abstract-factory')
-
-include('builder')
-project(':builder').projectDir = new File(rootDir, 'creational/builder')
-
-include('prototype')
-project(':prototype').projectDir = new File(rootDir, 'creational/prototype')
-
-include('singleton')
-project(':singleton').projectDir = new File(rootDir, 'creational/singleton')
-
-//Structural
-include('bridge')
-project(':bridge').projectDir = new File(rootDir, 'structural/bridge')
-
-include('adapter')
-project(':adapter').projectDir = new File(rootDir, 'structural/adapter')
-
-include('decorator')
-project(':decorator').projectDir = new File(rootDir, 'structural/decorator')
-
-include('facade')
-project(':facade').projectDir = new File(rootDir, 'structural/facade')
-
-include('flyweight')
-project(':flyweight').projectDir = new File(rootDir, 'structural/flyweight')
-//Behavioral
+def designPatterns = [
+        creational:
+                ['factory-method',
+                 'abstract-factory',
+                 'builder',
+                 'prototype',
+                 'singleton'],
+        structural:
+                ['bridge',
+                 'adapter',
+                 'decorator',
+                 'facade',
+                 'flyweight',
+                 'proxy'],
+        behavioral: []
+]
+designPatterns.each { key, value ->
+    value.each {
+        include(it)
+        project(':' + it).projectDir = new File(rootDir, key + '/' + it)
+    }
+}

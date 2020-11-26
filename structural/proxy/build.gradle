@@ -10,3 +10,9 @@ plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'java-application-conventions'
 }
+repositories {
+    mavenCentral()
+}
+dependencies {
+    compile 'com.google.apis:google-api-services-youtube:v3-rev20200618-1.30.9'
+}
