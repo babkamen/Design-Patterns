@@ -21,8 +21,8 @@ project(':builder').projectDir = new File(rootDir, 'creational/builder')
 include('prototype')
 project(':prototype').projectDir = new File(rootDir, 'creational/prototype')
 
-//include('singleton')
-//project(':singleton').projectDir = new File(rootDir, 'creational/singleton')
+include('singleton')
+project(':singleton').projectDir = new File(rootDir, 'creational/singleton')
 
 //Structural
 include('bridge')
@@ -36,4 +36,7 @@ project(':decorator').projectDir = new File(rootDir, 'structural/decorator')
 
 include('facade')
 project(':facade').projectDir = new File(rootDir, 'structural/facade')
+
+include('flyweight')
+project(':flyweight').projectDir = new File(rootDir, 'structural/flyweight')
 //Behavioral

@@ -1,1 +1,4 @@
 https://medium.com/xebia-engineering/prototype-design-pattern-cad550f94745
+
+#Definition
+Spawning multiple objects using .clone()
