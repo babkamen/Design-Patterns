@@ -18,6 +18,7 @@ def designPatterns = [
         structural:
                 ['bridge',
                  'adapter',
+                 'composite',
                  'decorator',
                  'facade',
                  'flyweight',

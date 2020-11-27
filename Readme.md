@@ -11,3 +11,5 @@ A: https://stackoverflow.com/questions/5739611/what-are-the-differences-between-
 #Examples of design patterns in java lib
 
 - https://stackoverflow.com/questions/1673841/examples-of-gof-design-patterns-in-javas-core-libraries
+
+Another design patterns blog - https://medium.com/@sawomirkowalski
