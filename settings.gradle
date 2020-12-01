@@ -23,7 +23,7 @@ def designPatterns = [
                  'facade',
                  'flyweight',
                  'proxy'],
-        behavioral: []
+        behavioral: ['chain_of_responsibility']
 ]
 designPatterns.each { key, value ->
     value.each {
