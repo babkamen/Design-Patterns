@@ -27,7 +27,8 @@ def designPatterns = [
                 ['chain_of_responsibility',
                  'iterator',
                  'command',
-                 'observer']
+                 'observer',
+                'memento']
 ]
 designPatterns.each { key, value ->
     value.each {
