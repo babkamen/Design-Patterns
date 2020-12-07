@@ -1,9 +1,9 @@
-import exception.AccessDeniedException;
-import handler.AuthenticationHandler;
-import handler.StatisticsHandler;
+import be_example.exception.AccessDeniedException;
+import be_example.handler.AuthenticationHandler;
+import be_example.handler.StatisticsHandler;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import request.AuthenticatedRequest;
+import be_example.request.AuthenticatedRequest;
 
 import java.util.List;
 

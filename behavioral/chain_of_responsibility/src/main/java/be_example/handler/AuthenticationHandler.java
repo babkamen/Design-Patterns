@@ -1,9 +1,9 @@
-package handler;
+package be_example.handler;
 
-import request.AnonymousRequest;
-import request.AuthenticatedRequest;
-import exception.AccessDeniedException;
-import request.Request;
+import be_example.request.AnonymousRequest;
+import be_example.request.AuthenticatedRequest;
+import be_example.exception.AccessDeniedException;
+import be_example.request.Request;
 
 import java.util.HashMap;
 import java.util.Map;

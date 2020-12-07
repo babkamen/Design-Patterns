@@ -1,4 +1,6 @@
+package stock_example;
 import org.junit.jupiter.api.Test;
+import stock_example.*;
 
 import java.util.List;
 import java.util.stream.Collectors;

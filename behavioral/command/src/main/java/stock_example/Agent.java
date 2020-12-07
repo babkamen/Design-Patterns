@@ -1,3 +1,5 @@
+package stock_example;
+
 import lombok.Getter;
 
 import java.util.ArrayList;

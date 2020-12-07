@@ -1,4 +1,4 @@
-package request;
+package be_example.request;
 
 import lombok.Builder;
 import lombok.Getter;

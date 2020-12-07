@@ -1,6 +1,6 @@
-package handler;
+package be_example.handler;
 
-import request.Request;
+import be_example.request.Request;
 
 public abstract class BaseHandler implements Handler {
     private Handler nextHandler;

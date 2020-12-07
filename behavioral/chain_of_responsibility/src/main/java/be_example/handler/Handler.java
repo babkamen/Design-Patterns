@@ -1,6 +1,6 @@
-package handler;
+package be_example.handler;
 
-import request.Request;
+import be_example.request.Request;
 
 public interface Handler {
     void setNext(Handler handler);

@@ -1,3 +1,5 @@
+package stock_example;
+
 public class StockTrade {
 
     public void buy(){

@@ -1,3 +1,5 @@
+package stock_example;
+
 public class BuyStockOrder extends Order{
     private StockTrade stockTrade;
 
