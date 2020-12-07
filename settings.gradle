@@ -25,9 +25,9 @@ def designPatterns = [
                  'proxy'],
         behavioral:
                 ['chain_of_responsibility',
-                'command',
-                'iterator',
-                ]
+                 'iterator',
+                 'command',
+                 'observer']
 ]
 designPatterns.each { key, value ->
     value.each {

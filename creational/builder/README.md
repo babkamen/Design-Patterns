@@ -8,3 +8,7 @@ https://medium.com/@andreaspoyias/design-patterns-a-quick-guide-to-builder-patte
 #Q&A
 1) Why use builder over all args constructor?
 Answer is above
+   
+# TODO:
+- add builder facade
+- add builder with generic self

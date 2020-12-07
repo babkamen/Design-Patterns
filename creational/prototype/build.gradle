@@ -10,3 +10,8 @@ plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'java-application-conventions'
 }
+dependencies {
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.11'
+
+}

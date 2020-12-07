@@ -1,5 +1,5 @@
 package prototype;
 
 public enum Size {
-    S,M,XL,XXL;
+    S, M, XL, XXL;
 }
