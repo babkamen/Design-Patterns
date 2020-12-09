@@ -7,6 +7,7 @@ import java.security.KeyPair;
 import java.security.KeyPairGenerator;
 
 public class EncryptionDecorator extends DelegationDataSourceDecorator {
+
     private Cipher encryptCipher;
     private Cipher decryptCipher;
 

@@ -4,8 +4,9 @@ import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
 public class Remote {
-    protected Device device;
+
     private static final int VOLUME_STEP = 5;
+    protected Device device;
 
     public void togglePower() {
         if (device.isEnabled()) {

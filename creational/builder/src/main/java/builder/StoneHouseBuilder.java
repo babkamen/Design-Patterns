@@ -1,6 +1,7 @@
 package builder;
 
 public class StoneHouseBuilder implements HouseBuilder {
+
     private int roof, windows, walls, door;
     private boolean hasGarage, hasSwimmingPool, hasGarden;
 
@@ -48,6 +49,6 @@ public class StoneHouseBuilder implements HouseBuilder {
 
     @Override
     public House build() {
-        return new House(roof,windows,walls,door,hasGarage,hasSwimmingPool,hasGarden);
+        return new House(roof, windows, walls, door, hasGarage, hasSwimmingPool, hasGarden);
     }
 }

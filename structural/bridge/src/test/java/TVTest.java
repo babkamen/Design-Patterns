@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class TVTest {
+
     @Test
     public void testRemote() {
         TV tv = new TV();

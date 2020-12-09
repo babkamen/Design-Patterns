@@ -2,6 +2,7 @@ import java.util.concurrent.Flow;
 
 
 class Participant implements Flow.Subscriber<ValueSubscription> {
+
     private int value;
     private Mediator mediator;
     private int id;

@@ -4,7 +4,8 @@ import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FlyweightTreeFactory implements TreeFactory{
+public class FlyweightTreeFactory implements TreeFactory {
+
     private Map<Integer, TreeType> map = new HashMap<>();
 
     public TreeType createTree(int treeType) throws IOException {

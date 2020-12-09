@@ -1,6 +1,7 @@
 package adapter;
 
 public class Android {
+
     public int punch() {
         return 10;
     }

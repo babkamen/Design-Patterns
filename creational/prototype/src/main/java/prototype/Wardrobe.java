@@ -14,6 +14,7 @@ import java.util.List;
 @Getter
 @EqualsAndHashCode
 public class Wardrobe implements Serializable {
+
     private List<Garment> garments = new ArrayList<>();
     private String name;
 }

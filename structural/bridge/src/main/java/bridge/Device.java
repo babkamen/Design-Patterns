@@ -1,6 +1,7 @@
 package bridge;
 
 public interface Device {
+
     boolean isEnabled();
 
     void enable();

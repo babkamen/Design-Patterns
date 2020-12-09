@@ -7,6 +7,7 @@ import java.util.List;
 
 @Getter
 public class Agent {
+
     private List<Order> orders = new ArrayList<>();
 
     public void placeOrder(Order order) {

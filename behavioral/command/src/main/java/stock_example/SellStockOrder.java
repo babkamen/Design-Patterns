@@ -1,6 +1,7 @@
 package stock_example;
 
 public class SellStockOrder extends Order {
+
     private StockTrade stockTrade;
 
     public SellStockOrder(StockTrade stockTrade) {

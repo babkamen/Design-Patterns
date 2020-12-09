@@ -1,6 +1,7 @@
 package decorator;
 
 public class InMemoryDataSourceDecorator implements DataSource {
+
     private byte[] dataSource;
 
     @Override
@@ -10,6 +11,6 @@ public class InMemoryDataSourceDecorator implements DataSource {
 
     @Override
     public byte[] readData() {
-        return  dataSource;
+        return dataSource;
     }
 }

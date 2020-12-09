@@ -30,9 +30,10 @@ def designPatterns = [
                  'observer',
                  'memento',
                  'mediator'],
-        other     : ['interpreter']
+        other     : ['interpreter',
+                     'null_object']
 ]
-designPatterns.each { key, value ->
+designPatterns.each { key, value  ->
     value.each {
         include(it)
         project(':' + it).projectDir = new File(rootDir, key + '/' + it)

@@ -5,6 +5,7 @@ import lombok.Getter;
 
 @Getter
 public class AuthenticatedRequest extends Request {
+
     private String username, password;
 
     @Builder

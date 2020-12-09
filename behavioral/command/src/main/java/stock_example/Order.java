@@ -11,9 +11,10 @@ import java.util.UUID;
 @Getter
 @RequiredArgsConstructor
 public abstract class Order {
-    private String id = UUID.randomUUID().toString();
+
     @NonNull
     protected StockOperationType type;
+    private String id = UUID.randomUUID().toString();
 
     abstract public void execute();
 }

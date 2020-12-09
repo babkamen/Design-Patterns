@@ -1,6 +1,6 @@
 package stock_example;
+
 import org.junit.jupiter.api.Test;
-import stock_example.*;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AgentTest {
+
     @Test
     public void testRedoLastAction() {
         StockTrade stockTrade = new StockTrade();

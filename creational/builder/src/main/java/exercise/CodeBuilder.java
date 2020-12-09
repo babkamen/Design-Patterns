@@ -1,6 +1,7 @@
 package exercise;
 
 public class CodeBuilder {
+
     private final int indentionLevel = 2;
     private StringBuilder sb = new StringBuilder();
 
@@ -9,9 +10,7 @@ public class CodeBuilder {
     }
 
     public CodeBuilder addField(String name, String type) {
-        for (int i = 0; i < indentionLevel; i++) {
-            sb.append(" ");
-        }
+        sb.append(" ".repeat(indentionLevel));
         sb.append(String.format("public %s %s;\n", type, name));
         return this;
     }

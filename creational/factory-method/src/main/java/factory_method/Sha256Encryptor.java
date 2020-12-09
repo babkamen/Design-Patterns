@@ -1,6 +1,6 @@
 package factory_method;
 
-public class Sha256Encryptor extends Encryptor{
+public class Sha256Encryptor extends Encryptor {
 
     @Override
     public EncryptionAlgorithm getEncryptionAlgorithm() {

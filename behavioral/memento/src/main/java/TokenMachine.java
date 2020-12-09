@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TokenMachine {
+
     @Getter
     private List<Token> tokens = new ArrayList<>();
 

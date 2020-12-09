@@ -9,6 +9,7 @@ import java.awt.image.BufferedImage;
 @ToString
 @Builder
 public class TreeType {
+
     private String name;
     private Color color;
     private BufferedImage sprite;

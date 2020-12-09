@@ -2,11 +2,13 @@ package abstract_factory;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class FurnitureFactoryTest {
+
     @Test
-    public void modernFurnitureTest(){
+    public void modernFurnitureTest() {
         Client client = new Client(new ArtDecoFurnitureFactory());
         client.testFurniture();
         assertTrue(client.everythingHasLegs());

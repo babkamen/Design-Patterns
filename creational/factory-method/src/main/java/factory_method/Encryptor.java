@@ -5,8 +5,9 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 
 public abstract class Encryptor {
+
     void writeToDisk(final String plaintext, final String filePath) throws FileNotFoundException {
-        try (PrintWriter out = new PrintWriter(new File(filePath))) {
+        try (PrintWriter out = new PrintWriter(filePath)) {
             out.write(getEncryptionAlgorithm().encrypt(plaintext));
         }
     }

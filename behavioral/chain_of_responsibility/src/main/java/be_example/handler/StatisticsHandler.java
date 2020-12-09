@@ -8,6 +8,7 @@ import java.util.List;
 
 @Getter
 public class StatisticsHandler extends BaseHandler {
+
     private List<String> usedUrls = new ArrayList<>();
 
     @Override

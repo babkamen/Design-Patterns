@@ -1,6 +1,7 @@
 package abstract_factory;
 
 public class ArtDecoCoffeeTable implements CoffeeTable {
+
     @Override
     public boolean hasLegs() {
         return true;

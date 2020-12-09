@@ -7,20 +7,21 @@ import java.util.Iterator;
 import java.util.List;
 
 @Getter
-public class WordsCollection implements Aggregator{
+public class WordsCollection implements Aggregator {
+
     private List<String> items;
 
     public WordsCollection() {
         this.items = new ArrayList<>();
     }
 
-    public void addItem(String item){
+    public void addItem(String item) {
         items.add(item);
     }
 
     @Override
     public Iterator<String> getIterator() {
-        return new WordsCollectionIterator(this,false);
+        return new WordsCollectionIterator(this, false);
     }
 
     @Override

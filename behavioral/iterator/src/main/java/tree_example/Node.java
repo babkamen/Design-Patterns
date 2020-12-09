@@ -3,6 +3,7 @@ package tree_example;
 import java.util.Iterator;
 
 class Node<T> {
+
     public T value;
     public Node<T> left, right, parent;
 
@@ -18,7 +19,7 @@ class Node<T> {
         left.parent = right.parent = this;
     }
 
-    public  Iterator<Node<T>> preOrder() {
+    public Iterator<Node<T>> preOrder() {
         return new PreOrderIterator<>(this);
     }
 
@@ -29,6 +30,7 @@ class Node<T> {
 }
 
 class PreOrderIterator<T> implements Iterator<Node<T>> {
+
     private Node<T> current, root;
     private boolean yieldedStart;
     private boolean visitedLeftmostChild = false;
@@ -86,6 +88,7 @@ class PreOrderIterator<T> implements Iterator<Node<T>> {
 
 
 class Demo {
+
     public static void main(String[] args) {
         //   1
         //  / \

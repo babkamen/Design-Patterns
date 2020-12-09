@@ -1,6 +1,7 @@
 import java.util.List;
 
 public class YoutubeManager {
+
     public static void main(String[] args) {
         YoutubeService service = new CachingYoutubeService(new YoutubeServiceImpl());
         LoggingHandler loggingHandler = new LoggingHandler();

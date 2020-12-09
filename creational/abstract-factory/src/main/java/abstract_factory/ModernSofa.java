@@ -1,6 +1,7 @@
 package abstract_factory;
 
 public class ModernSofa implements Sofa {
+
     @Override
     public boolean hasLegs() {
         return false;

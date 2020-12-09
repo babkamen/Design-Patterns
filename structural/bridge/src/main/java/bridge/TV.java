@@ -6,6 +6,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class TV implements Device {
+
     private int channel = 0;
     private int volume = 100;
     private boolean enabled;

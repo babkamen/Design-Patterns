@@ -1,6 +1,7 @@
 import java.util.concurrent.Flow;
 
 class ValueSubscription implements Flow.Subscription {
+
     private int value;
 
     public ValueSubscription(int value) {

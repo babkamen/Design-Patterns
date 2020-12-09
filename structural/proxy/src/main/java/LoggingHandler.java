@@ -3,6 +3,7 @@ import java.time.Instant;
 import java.util.function.Supplier;
 
 public class LoggingHandler {
+
     <T> T execute(Supplier<T> c) {
         Instant start = Instant.now();
         T result = null;

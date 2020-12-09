@@ -4,6 +4,7 @@ import lombok.Data;
 @AllArgsConstructor
 @Data
 public class Token {
+
     private int value;
 }
 

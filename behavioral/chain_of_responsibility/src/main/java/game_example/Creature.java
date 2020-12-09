@@ -7,21 +7,28 @@ import java.util.Map;
 import java.util.function.Consumer;
 
 
+enum Statistic {
+    ATTACK, DEFENSE
+}
+
 interface Creature {
+
     int getAttack();
 
     int getDefense();
 }
 
 class Game {
+
     public Event<Query> queries = new Event<>();
     public List<Creature> creatures = new ArrayList<>();
 }
 
 class Goblin implements Creature, AutoCloseable {
+
     protected int baseAtk = 1, baseDef = 1;
-    private Game game;
     protected int token;
+    private Game game;
 
     public Goblin(Game game) {
         this.game = game;
@@ -73,25 +80,22 @@ class GoblinKing extends Goblin {
         super(game);
         baseAtk = 3;
         baseDef = 3;
-        System.out.println("Added goblin king#"+token);
+        System.out.println("Added goblin king#" + token);
     }
 
     //when Goblin king in game every goblin gets +1 atk
     protected void applyModifier(Query query) {
         super.applyModifier(query);
         if (query.getCreature() != this && query.getStatistic() == Statistic.ATTACK) {
-            System.out.println("Increase atk on goblin king#"+token);
+            System.out.println("Increase atk on goblin king#" + token);
             query.setResult(query.getResult() + 1);
         }
     }
 
 }
 
-enum Statistic {
-    ATTACK, DEFENSE
-}
-
 class Event<TArgs> {
+
     private int index = 0;
     private Map<Integer, Consumer<TArgs>> handlers = new HashMap<>();
 
@@ -141,6 +145,7 @@ class Query {
 }
 
 class Demo {
+
     public static void main(String[] args) {
         Game game = new Game();
         Goblin goblin = new Goblin(game);

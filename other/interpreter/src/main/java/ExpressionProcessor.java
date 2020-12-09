@@ -3,17 +3,15 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+interface Element {
+
+    int eval();
+}
+
 class Token {
-    public enum Type {
-        Integer,
-        VARIABLE,
-        PLUS,
-        MINUS
-    }
 
     public Type type;
     public String text;
-
     public Token(Type type, String text) {
         this.type = type;
         this.text = text;
@@ -26,13 +24,17 @@ class Token {
                 ", text='" + text + '\'' +
                 '}';
     }
-}
 
-interface Element {
-    int eval();
+    public enum Type {
+        Integer,
+        VARIABLE,
+        PLUS,
+        MINUS
+    }
 }
 
 class Integer implements Element {
+
     private int value;
 
     public Integer(int value) {
@@ -53,10 +55,6 @@ class Integer implements Element {
 }
 
 class BinaryOperation implements Element {
-    public enum Type {
-        ADDITION,
-        SUBTRACTION
-    }
 
     public Element left, right;
     public Type type;
@@ -80,9 +78,15 @@ class BinaryOperation implements Element {
                 ", right=" + right +
                 '}';
     }
+
+    public enum Type {
+        ADDITION,
+        SUBTRACTION
+    }
 }
 
 class ExpressionProcessor {
+
     public Map<Character, java.lang.Integer> variables = new HashMap<>();
 
     private BinaryOperation parse(List<Token> tokens) {

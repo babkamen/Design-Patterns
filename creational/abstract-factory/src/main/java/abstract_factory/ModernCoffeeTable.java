@@ -1,6 +1,7 @@
 package abstract_factory;
 
 public class ModernCoffeeTable implements CoffeeTable {
+
     @Override
     public boolean hasLegs() {
         return false;

@@ -3,6 +3,7 @@ import java.util.List;
 import java.util.concurrent.Flow;
 
 class Game implements Flow.Publisher<Integer> {
+
     private List<Flow.Subscriber<? super Integer>> subscribers = new ArrayList<>();
 
     @Override
@@ -20,7 +21,7 @@ class Game implements Flow.Publisher<Integer> {
         return subscribers.size();
     }
 
-    public void unsubscribe(Flow.Subscriber subscriber) {
+    public void unsubscribe(Flow.Subscriber<? super Integer> subscriber) {
         subscribers.remove(subscriber);
         submit(this.subscribers.size());
     }

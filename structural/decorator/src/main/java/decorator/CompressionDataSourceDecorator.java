@@ -5,6 +5,7 @@ import java.util.zip.Deflater;
 import java.util.zip.Inflater;
 
 public class CompressionDataSourceDecorator extends DelegationDataSourceDecorator {
+
     private final Deflater compresser = new Deflater();
     private final Inflater decompresser = new Inflater();
     private int dataLength;

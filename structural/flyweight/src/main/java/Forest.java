@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Random;
 
 public class Forest extends JPanel {
+
     private final List<Tree> trees = new ArrayList<>();
     private final JLabel text = new JLabel();
 

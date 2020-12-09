@@ -1,4 +1,5 @@
 package example1
+
 import example1.WordsCollection
 import spock.lang.Specification
 
@@ -7,7 +8,7 @@ class WordsCollectionTest extends Specification {
         given:
         def items = ["1", "2", "3"]
         when: ''
-        def wordsCollection = new WordsCollection();
+        def wordsCollection = new WordsCollection()
         items.each { wordsCollection.addItem(it) }
         then:
         def iterator = wordsCollection.iterator
@@ -23,7 +24,7 @@ class WordsCollectionTest extends Specification {
         def items = ["1", "2", "3"]
 
         when:
-        def wordsCollection = new WordsCollection();
+        def wordsCollection = new WordsCollection()
         items.each {
             wordsCollection.addItem(it)
         }

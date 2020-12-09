@@ -1,10 +1,11 @@
-
 # Documentation
+
 [Documentation](https://refactoring.guru/design-patterns)
 
 # TODO
+
 - Q: What's the difference between abstract factory and factory method?
-A: https://stackoverflow.com/questions/5739611/what-are-the-differences-between-abstract-factory-and-factory-design-patterns
+  A: https://stackoverflow.com/questions/5739611/what-are-the-differences-between-abstract-factory-and-factory-design-patterns
 
 - Multithreaded singleton
 

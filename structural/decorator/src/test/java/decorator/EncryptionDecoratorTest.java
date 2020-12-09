@@ -7,7 +7,8 @@ import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 class EncryptionDecoratorTest {
 
@@ -19,7 +20,7 @@ class EncryptionDecoratorTest {
         String data = "Hello,world!";
         Charset charset = Charset.defaultCharset();
         byte[] s = data.getBytes(charset);
-        String filePath = tempDir.toString()+"/test.txt";
+        String filePath = tempDir.toString() + "/test.txt";
         FileDataSource fileDataSource = new FileDataSource(filePath);
         EncryptionDecorator encryptionDecorator = new EncryptionDecorator(fileDataSource);
         encryptionDecorator.writeData(s);
@@ -33,7 +34,7 @@ class EncryptionDecoratorTest {
         String data = "Hello,world!Hello,world!";
         Charset charset = StandardCharsets.UTF_8;
         byte[] s = data.getBytes(charset);
-        String filePath = tempDir+"/test.txt";
+        String filePath = tempDir + "/test.txt";
         FileDataSource fileDataSource = new FileDataSource(filePath);
         CompressionDataSourceDecorator encryptionDecorator = new CompressionDataSourceDecorator(fileDataSource);
         encryptionDecorator.writeData(s);

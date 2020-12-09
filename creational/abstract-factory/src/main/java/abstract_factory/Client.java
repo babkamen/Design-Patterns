@@ -1,12 +1,12 @@
 package abstract_factory;
 
 import lombok.AllArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
 @AllArgsConstructor
 @Setter
 public class Client {
+
     private FurnitureFactory furnitureFactory;
 
     public boolean everythingHasLegs() {

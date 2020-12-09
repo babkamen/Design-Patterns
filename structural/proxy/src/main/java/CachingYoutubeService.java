@@ -9,6 +9,7 @@ import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
 public class CachingYoutubeService implements YoutubeService {
+
     private final YoutubeService service;
     private Map<String, Video> cache = new HashMap<>();
 

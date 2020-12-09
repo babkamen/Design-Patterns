@@ -3,9 +3,11 @@ import java.util.List;
 import java.util.concurrent.Flow;
 
 public class Mediator implements Flow.Publisher<ValueSubscription> {
+
     public List<Flow.Subscriber<ValueSubscription>> subscribers = new ArrayList<>();
 
     @Override
+    @SuppressWarnings("uncheked")
     public void subscribe(Flow.Subscriber<? super ValueSubscription> subscriber) {
         subscribers.add((Flow.Subscriber<ValueSubscription>) subscriber);
     }

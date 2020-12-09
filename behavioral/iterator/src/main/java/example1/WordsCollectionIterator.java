@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.NoSuchElementException;
 
 public class WordsCollectionIterator implements Iterator<String> {
+
     private int index;
     private WordsCollection wordsCollection;
     private int itemsSize;
