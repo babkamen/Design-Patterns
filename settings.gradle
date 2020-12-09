@@ -28,10 +28,9 @@ def designPatterns = [
                  'iterator',
                  'command',
                  'observer',
-                 'memento'],
-        other     : [
-                'interpreter'
-        ]
+                 'memento',
+                 'mediator'],
+        other     : ['interpreter']
 ]
 designPatterns.each { key, value ->
     value.each {
