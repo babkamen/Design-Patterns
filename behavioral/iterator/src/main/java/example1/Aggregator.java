@@ -1,3 +1,5 @@
+package example1;
+
 import java.util.Iterator;
 
 public interface Aggregator {

@@ -1,3 +1,5 @@
+package example1
+import example1.WordsCollection
 import spock.lang.Specification
 
 class WordsCollectionTest extends Specification {
