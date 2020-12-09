@@ -29,11 +29,13 @@ def designPatterns = [
                  'command',
                  'observer',
                  'memento',
-                 'mediator'],
+                 'mediator',
+                 'state',
+                 'strategy'],
         other     : ['interpreter',
                      'null_object']
 ]
-designPatterns.each { key, value  ->
+designPatterns.each { key, value ->
     value.each {
         include(it)
         project(':' + it).projectDir = new File(rootDir, key + '/' + it)

@@ -10,3 +10,8 @@ plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'java-application-conventions'
 }
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.springframework.statemachine/spring-statemachine-core
+    compile group: 'org.springframework.statemachine', name: 'spring-statemachine-core', version: '2.2.1.RELEASE'
+}
