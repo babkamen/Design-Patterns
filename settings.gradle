@@ -31,7 +31,8 @@ def designPatterns = [
                  'memento',
                  'mediator',
                  'state',
-                 'strategy'],
+                 'strategy',
+                 'template_method'],
         other     : ['interpreter',
                      'null_object']
 ]
