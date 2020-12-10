@@ -32,7 +32,8 @@ def designPatterns = [
                  'mediator',
                  'state',
                  'strategy',
-                 'template_method'],
+                 'template_method',
+                'visitor'],
         other     : ['interpreter',
                      'null_object']
 ]
