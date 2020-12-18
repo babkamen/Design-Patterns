@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class TokenMachineTest {
 
     @Test
-    public void basicTest() {
+    void basicTest() {
         TokenMachine tokenMachine = new TokenMachine();
         Memento m1 = tokenMachine.addToken(1);
         assertEquals(1, m1.getTokens().size());

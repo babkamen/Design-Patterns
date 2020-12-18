@@ -13,6 +13,10 @@ plugins {
 
 }
 
+tasks['sonarqube'].dependsOn test
+test.finalizedBy jacocoTestReport
+
+
 sonarqube {
     properties {
         property "sonar.sources", "src/main/java"
@@ -26,9 +30,6 @@ dependencies {
 
     // Use JUnit Jupiter Engine for testing.
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
-
-    // This dependency is used by the application.
-//    implementation 'com.google.guava:guava:29.0-jre'
 
     compileOnly 'org.projectlombok:lombok:1.18.16'
     annotationProcessor 'org.projectlombok:lombok:1.18.16'
@@ -45,21 +46,14 @@ dependencies {
 
 }
 
-
 // Do not generate reports for individual projects
 tasks.named("jacocoTestReport") {
-    enabled = false
-
-}
-
-test {
-    jacoco {
-        destinationFile = file("$buildDir/jacoco/jacocoTest.exec")
-        classDumpDir = file("$buildDir/jacoco/classpathdumps")
-        includes = ['**/com/babkamen/**']
-
+    reports {
+        xml.enabled true
     }
+
 }
+
 
 // Share sources folder with other projects for aggregated JaCoCo reports
 configurations.create('transitiveSourcesElements') {

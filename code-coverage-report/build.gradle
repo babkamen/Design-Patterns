@@ -5,7 +5,7 @@ plugins {
 dependencies {
     gradle.designPatterns.each { key, value ->
         value.each {
-            implementation project(":" + it)
+            implementation project(':' + key + ":" + it)
         }
     }
 }

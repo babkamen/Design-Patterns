@@ -52,15 +52,6 @@ def codeCoverageReport = tasks.register('codeCoverageReport', JacocoReport) {
 
 }
 
-test {
-    jacoco {
-        destinationFile = file("$buildDir/jacoco/jacocoTest.exec")
-        classDumpDir = file("$buildDir/jacoco/classpathdumps")
-        includes = ['**/com/babkamen/**']
-
-    }
-}
-
 // Make JaCoCo report generation part of the 'check' lifecycle phase
 tasks.named("check") {
     dependsOn(codeCoverageReport)

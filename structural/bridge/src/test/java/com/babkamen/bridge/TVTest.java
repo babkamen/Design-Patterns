@@ -1,14 +1,13 @@
-import com.babkamen.bridge.AdvancedRemote;
-import com.babkamen.bridge.Remote;
-import com.babkamen.bridge.TV;
+package com.babkamen.bridge;
+
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class TVTest {
+class TVTest {
 
     @Test
-    public void testRemote() {
+    void testRemote() {
         TV tv = new TV();
         Remote remote = new Remote(tv);
 
@@ -31,7 +30,7 @@ public class TVTest {
     }
 
     @Test
-    public void testAdvancedRemote() {
+    void testAdvancedRemote() {
         TV tv = new TV();
         AdvancedRemote remote = new AdvancedRemote(tv);
 

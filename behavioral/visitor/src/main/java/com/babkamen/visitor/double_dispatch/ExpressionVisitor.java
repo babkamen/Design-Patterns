@@ -1,12 +1,12 @@
 package com.babkamen.visitor.double_dispatch;
 
-abstract class ExpressionVisitor {
+interface ExpressionVisitor {
 
-    abstract void visit(ValueExpression value);
+    void visit(ValueExpression value);
 
-    abstract void visit(AdditionExpression ae);
+    void visit(AdditionExpression ae);
 
-    abstract void visit(MultiplicationExpression me);
+    void visit(MultiplicationExpression me);
 }
 
 interface Expression {
@@ -64,7 +64,7 @@ class MultiplicationExpression extends BinaryOperationExpression {
     }
 }
 
-class ExpressionPrinter extends ExpressionVisitor {
+class ExpressionPrinter implements ExpressionVisitor {
 
     private StringBuilder sb = new StringBuilder();
 
@@ -74,12 +74,12 @@ class ExpressionPrinter extends ExpressionVisitor {
     }
 
     @Override
-    void visit(ValueExpression value) {
+    public void visit(ValueExpression value) {
         sb.append(value.value);
     }
 
     @Override
-    void visit(AdditionExpression ae) {
+    public void visit(AdditionExpression ae) {
         sb.append("(");
         ae.lhs.accept(this);
         sb.append("+");
@@ -88,7 +88,7 @@ class ExpressionPrinter extends ExpressionVisitor {
     }
 
     @Override
-    void visit(MultiplicationExpression me) {
+    public void visit(MultiplicationExpression me) {
         me.lhs.accept(this);
         sb.append("*");
         me.rhs.accept(this);

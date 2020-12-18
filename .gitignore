@@ -49,3 +49,5 @@ IgnoreLexer.java~
 build
 gradle
 *bat
+
+*.htprof

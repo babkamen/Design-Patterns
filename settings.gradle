@@ -41,8 +41,7 @@ def designPatterns = [
 gradle.ext.designPatterns = designPatterns
 designPatterns.each { key, value ->
     value.each {
-        include(it)
-        project(':' + it).projectDir = new File(rootDir, key + '/' + it)
+        include(":" + key + ':' + it)
     }
 }
 include 'code-coverage-report'

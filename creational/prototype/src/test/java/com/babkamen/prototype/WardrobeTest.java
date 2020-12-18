@@ -8,10 +8,10 @@ import java.awt.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
-public class WardrobeTest {
+class WardrobeTest {
 
     @Test
-    public void testWardrobe() {
+     void testWardrobe() {
 
         Wardrobe wardrobe = new Wardrobe();
         wardrobe.setName("wardrobe1");
