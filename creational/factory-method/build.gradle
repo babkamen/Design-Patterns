@@ -10,3 +10,10 @@ plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'java-application-conventions'
 }
+
+dependencies {
+
+    // https://mvnrepository.com/artifact/commons-codec/commons-codec
+    compile group: 'commons-codec', name: 'commons-codec', version: '1.15'
+
+}

@@ -1,8 +1,8 @@
 # Intent
 
 Chain of Responsibility is a behavioral design pattern that lets you pass requests along a chain of handlers. Upon
-receiving a be_example.request, each be_example.handler decides either to process the be_example.request or to pass it
-to the next be_example.handler in the chain.
+receiving a com.babkamen.game_example.be_example.request, each com.babkamen.game_example.be_example.handler decides either to process the com.babkamen.game_example.be_example.request or to pass it
+to the next com.babkamen.game_example.be_example.handler in the chain.
 
 # Applicability
 

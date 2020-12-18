@@ -1,0 +1,11 @@
+plugins {
+    id 'jacoco-aggregation'
+}
+
+dependencies {
+    gradle.designPatterns.each { key, value ->
+        value.each {
+            implementation project(":" + it)
+        }
+    }
+}

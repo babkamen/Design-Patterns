@@ -7,13 +7,13 @@ produce different types and representations of an object using the same construc
 - Use the Builder pattern when you want your code to be able to create different representations of some product (for
   example, stone and wooden houses)
 - Use the Builder to construct Composite trees or other complex objects
-  https://medium.com/@andreaspoyias/design-patterns-a-quick-guide-to-builder-pattern-a834d7cacead
+  https://medium.com/@andreaspoyias/design-patterns-a-quick-guide-to-com.babkamen.builder-pattern-a834d7cacead
 
 # Q&A
 
-1) Why use builder over all args constructor? Answer is above
+1) Why use com.babkamen.builder over all args constructor? Answer is above
 
 # TODO:
 
-- add builder facade
-- add builder with generic self
+- add com.babkamen.builder facade
+- add com.babkamen.builder with generic self

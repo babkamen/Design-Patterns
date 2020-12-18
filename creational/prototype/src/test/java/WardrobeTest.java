@@ -1,9 +1,7 @@
+package com.babkamen.prototype;
+
 import org.apache.commons.lang3.SerializationUtils;
 import org.junit.jupiter.api.Test;
-import prototype.Fabric;
-import prototype.Garment;
-import prototype.Size;
-import prototype.Wardrobe;
 
 import java.awt.*;
 

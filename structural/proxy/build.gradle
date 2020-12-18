@@ -14,5 +14,7 @@ repositories {
     mavenCentral()
 }
 dependencies {
-    compile 'com.google.apis:google-api-services-youtube:v3-rev20200618-1.30.9'
+    compile ('com.google.apis:google-api-services-youtube:v3-rev20200618-1.30.9'){
+        exclude group: 'commons-logging', module: 'commons-logging'
+    }
 }

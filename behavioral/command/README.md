@@ -1,8 +1,8 @@
 # Intent
 
-Command is a behavioral design pattern that turns a be_example.request into a stand-alone object that contains all
-information about the be_example.request. This transformation lets you parameterize methods with different requests,
-delay or queue a be_example.request’s execution, and support undoable operations.
+Command is a behavioral design pattern that turns a com.babkamen.game_example.be_example.request into a stand-alone object that contains all
+information about the com.babkamen.game_example.be_example.request. This transformation lets you parameterize methods with different requests,
+delay or queue a com.babkamen.game_example.be_example.request’s execution, and support undoable operations.
 
 # Applicability
 

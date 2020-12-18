@@ -1,6 +1,6 @@
-import bridge.AdvancedRemote;
-import bridge.Remote;
-import bridge.TV;
+import com.babkamen.bridge.AdvancedRemote;
+import com.babkamen.bridge.Remote;
+import com.babkamen.bridge.TV;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

@@ -22,7 +22,8 @@ def designPatterns = [
                  'decorator',
                  'facade',
                  'flyweight',
-                 'proxy'],
+                 'proxy'
+                ],
         behavioral:
                 ['chain_of_responsibility',
                  'iterator',
@@ -33,13 +34,15 @@ def designPatterns = [
                  'state',
                  'strategy',
                  'template_method',
-                'visitor'],
+                 'visitor'],
         other     : ['interpreter',
                      'null_object']
 ]
+gradle.ext.designPatterns = designPatterns
 designPatterns.each { key, value ->
     value.each {
         include(it)
         project(':' + it).projectDir = new File(rootDir, key + '/' + it)
     }
 }
+include 'code-coverage-report'

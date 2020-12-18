@@ -5,17 +5,22 @@
 plugins {
     // Groovy extends java plugin
     id 'groovy'
+
 }
 repositories {
     // Use JCenter for resolving dependencies.
+    mavenCentral()
     jcenter()
 }
 
 dependencies {
-
 }
 
 tasks.named('test') {
     // Use junit platform for unit tests.
     useJUnitPlatform()
+    System.setProperty "junit.jupiter.execution.parallel.enabled", "true"
+    System.setProperty "junit.jupiter.execution.parallel.mode.default", "concurrent"
+    maxParallelForks = Runtime.getRuntime().availableProcessors()
+
 }
